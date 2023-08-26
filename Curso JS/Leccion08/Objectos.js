@@ -86,3 +86,23 @@ let person_str = JSON.stringify(persona);
 
 console.log(person_str)
 
+
+
+/*Metodo Get y Set en JS*/
+cliente = {
+    nombre : "Juanito",
+    apellido : "Kolaloka",
+    edad : 28,
+    idioma : "us",
+    get nombreCompleto() { return this.nombre + " " + this.apellido},
+    get lang() { return this.idioma.toUpperCase()},
+    set lang( lang ) { this.idioma = lang.toUpperCase(); }
+    
+}
+
+console.log(cliente.nombreCompleto);
+/*get y set son propiedades*/
+
+cliente.lang = "es";
+
+console.log(cliente.idioma);
