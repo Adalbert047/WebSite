@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: #e53946;
+}
+
+div.contenedor
+{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    color: #457b9d;
+}
+/*Hereda todo las caracteristicas a los hijos sin importar que sea interno*/
+div.contenedor.descendiente p 
+{
+    background-color: yellow;
+}
+/*Hereda todas las caracteristicas solo a los hijos de forma directa*/
+div.contenedor.hijo > p 
+{
+    background-color: green;
+}
+/*Hereda las caracteristicas en el mismo nivel de la estructura (Solo una vez)*/
+div.contenedor.adyacente + p
+{
+    background-color: black;
+}
+/*Lo mismo que el anterior, ahora todas del mismo nivel*/
+div.contenedor.hermano ~ p
+{
+    background-color: blueviolet;
+}

@@ -1,0 +1,45 @@
+h1
+{
+
+}
+ul
+{
+    list-style-type: none;
+    background-color: #457b9d;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    float: left;
+}
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: #1d3557;
+}
+
+
+
+
+
+/*
+Lista No ordenadas:
+
+Si queremos colocar las propiedades de Hover, Visit, Etc, debe ser :Hover 
+
+
+
+Lista Ordenadas:
+Counter reset: Se declara una variable como contador
+
+Content: Esto permite poner un contenido antes y despues
+*/

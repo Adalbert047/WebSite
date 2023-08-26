@@ -1,0 +1,29 @@
+h1, div, p
+{
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    display: block;
+
+}
+h1
+{
+    /*Permite esconder la etiqueta, no ocupa el espacio*/display: none;
+}
+p
+{
+    /*Permite esconder la etiqueta, deja el espacio*/visibility: hidden;
+}
+span
+{
+    border: 1px solid black;
+}
+a
+{
+    display: block;
+}
+li
+{
+    display: inline;
+}

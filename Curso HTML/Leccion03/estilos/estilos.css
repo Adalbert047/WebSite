@@ -1,0 +1,28 @@
+h1{
+    color: #560bad;
+    margin: 10px 0px;
+}
+a:link,
+a:visited{
+    background-color: #b5179e;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin: 0px 50px;
+    display: inline-block;
+    
+
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(222, 194, 194);
+}
+a:active{
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(53, 20, 20);
+}
+
+
+/*Esta configuracion hacemos la perspectiva como boton*/

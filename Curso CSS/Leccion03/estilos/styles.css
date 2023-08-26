@@ -1,0 +1,20 @@
+h1
+{
+    color: aquamarine;
+    font-size: 50px;
+}
+div
+{
+    padding: 10px;
+    border: 10px solid #457bd9;
+    margin: 20px;
+    background-color: #f1faee;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+
+
+/*El outline permite tener un border entre el Border y Margin*/

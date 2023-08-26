@@ -1,0 +1,54 @@
+
+*
+{
+    background-color: gray;
+}
+h1
+{
+    text-align: center;
+    color: #e63946;
+}
+.caja
+{
+    padding: 10px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 10px;
+    float: left;
+}
+.rojo
+{
+    background-color: crimson;
+}
+.rosa
+{
+    background-color: deeppink;
+}
+.rgb
+{
+    background-color: rgb(131, 56, 236);
+}
+/*RGB con valor de transparecencia*/
+.rgba
+{
+    background-color: rgba(131, 56, 236, 0.5);
+}
+.hexadecimal
+{
+    background-color: #00FFFF;
+}
+.hexadecimal_transparencia
+{
+    background-color: #00FFFF88;
+}
+.hsl
+{
+    background-color: hsl(23, 74%, 43%);
+}
+.hsla
+{
+    background-color: hsl(23, 74%, 43%, 0.5);
+}

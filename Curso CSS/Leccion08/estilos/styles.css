@@ -1,0 +1,39 @@
+h1
+{
+    text-align: center;
+    color: crimson;
+
+}
+div
+{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+}
+.reloj
+{
+    font-size: 2.5em;
+    color: aquamarine;
+}
+.flecha_roja
+{
+    font-size: 2.5em;
+    color: red;
+}
+
+ /*En el caso de los iconos de google, se debe agregar la clase de este desde la pagina
+ de Icons Google*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*Clase para Icons Ionic*/
+.persona
+{
+    font-size: 3em;
+    color: blue;
+}
