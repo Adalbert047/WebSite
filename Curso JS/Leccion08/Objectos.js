@@ -89,6 +89,8 @@ console.log(person_str)
 
 
 /*Metodo Get y Set en JS*/
+
+
 cliente = {
     nombre : "Juanito",
     apellido : "Kolaloka",
@@ -106,3 +108,81 @@ console.log(cliente.nombreCompleto);
 cliente.lang = "es";
 
 console.log(cliente.idioma);
+
+
+/*El uso de constructores en JS */
+
+
+/*Funcion constructor*/
+/*Uso de fuction como constructor*/
+
+
+function Persona(nombre, apellido, email)  
+{
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    /*Forma de agregar un metodo en un constructo*/
+    this.miNombreCompleto = function() {
+        return "Nombre: " + this.nombre + ", Apellido: " + this.apellido;
+    }
+}
+
+let PrimerUsuario = new Persona("Adal", "Amaya", "aadalberto@");
+let SegundoUsuario = new Persona("Betito", "Juanito", "Betito@");
+
+console.log(PrimerUsuario.miNombreCompleto());
+console.log(SegundoUsuario.miNombreCompleto());
+console.log(typeof(Persona));
+
+/*Forma de crear objetos en js */
+let miObjeto = new Object();
+/*Forma simplificada*/
+let miObjecto2 = {}
+
+let miFuncion = new Function();
+/*Forma simplificada*/
+let miFuncion2 = function() {}
+
+
+
+/*Uso de prototype en JS*/
+
+let Padre = new Persona("Joel", "Amatya", "adawdaw@");
+
+/*Forma de crear propiedades a un objeto*/
+Persona.prototype.sexo = "Indefinido";
+
+console.log(Padre.sexo);
+Padre.sexo = "Masculino";
+console.log(Padre.sexo);
+
+
+console.log(PrimerUsuario.sexo);
+PrimerUsuario.sexo = "Elle";
+console.log(PrimerUsuario.sexo);
+
+
+let Futbolista = {
+    nombre : "Cristinao", 
+    apellido : "Santos",
+    nombre_Completo : function(titulo, rol) { return "titulo: " + titulo + " rol: " + rol + " " +  this.nombre + " " + this.apellido }
+}
+
+let Tennista = {
+    nombre : "Messi", 
+    apellido : "Cucini",
+}
+
+console.log(Futbolista.nombre_Completo("Licenciado", "loka"));
+/*Permite el llamado de otro metodo que tiene la misma estructura de otro objeto*/
+//Permite mandar parametros pero este no debe ponerse con this.
+console.log(Futbolista.nombre_Completo.call(Tennista, "GRANDE", "tenista"));
+
+
+/*Uso de apply*/
+
+
+array = ["Ing", "KOKO"];
+/*Tiene el mismo efecto que call, solo que se debe pasar mediante un arreglo*/
+console.log(Futbolista.nombre_Completo.apply(Tennista, array));
