@@ -1,4 +1,9 @@
 class Persona {    
+
+    //Atributo propio de la clase
+    static contadorObjetosPersona = 0;
+
+
     constructor(nombre, apellido, email, edad, sexo)
     {
         this.nombre = nombre;
@@ -7,6 +12,9 @@ class Persona {
         this.edad = edad;
         this.sexo = sexo;
         this.estadoCivil = "";
+
+        //Se utiliza la clase en el dado caso que queramos usar una variable de la clase
+        Persona.contadorObjetosPersona++;
     }
 
     get nombreCompleto () {return "Nombre: " + this.nombre + " Apellido: " + this.apellido}
@@ -21,6 +29,14 @@ class Persona {
     toString()
     {
         return this.nombreCompleto + ", Edad : " + this.edad + ", Sexo : " + this.sexo;
+    }
+    static saludar()
+    {
+        return "Hola";
+    }
+    static saludar2(Persona)
+    {
+        return "Hola" + Persona.nombreCompleto;
     }
 }
 
@@ -75,6 +91,9 @@ class Empleado extends Persona
         return super.toString() + ", Departamento: " + this.departamento;
     }
 
+    //Metodo exclusivo de la clase, no de los objetos de la clase
+
+
 
     /*Con 'super' se puede llamar los valores, metodos y propiedades de la clase padre para su uso en la clase hijo*/
 }
@@ -99,3 +118,19 @@ console.log(empleadin.nombreCompleto);
 /*Polimorfismo, se llama cuando un objeto llama el metodo de una clase padre
   (Multiple formas en tiempo de ejecucion)*/
 console.log(empleadin.toString());
+
+
+
+Persona.saludar2(Yo);
+Persona.saludar();
+
+Empleado.saludar()
+Empleado.saludar2(empleadin);
+
+//Atributo exclusivo de la clase
+console.log(Persona.contadorObjetosPersona);
+
+
+let empleadin2 = new Empleado("Koka", "cji", "dwadw@email.com", 21, "M", "Recursos Humanos");
+
+console.log(Persona.contadorObjetosPersona);
