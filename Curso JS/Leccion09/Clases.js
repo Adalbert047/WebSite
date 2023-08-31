@@ -1,7 +1,10 @@
 class Persona {    
 
     //Atributo propio de la clase
-    static contadorObjetosPersona = 0;
+    static contadorPersona = 0;
+
+    //Atributo de los objetos
+    num_Casa = 0;
 
 
     constructor(nombre, apellido, email, edad, sexo)
@@ -14,11 +17,12 @@ class Persona {
         this.estadoCivil = "";
 
         //Se utiliza la clase en el dado caso que queramos usar una variable de la clase
-        Persona.contadorObjetosPersona++;
+        this.Id_Persona = ++Persona.contadorPersona;
     }
 
     get nombreCompleto () {return "Nombre: " + this.nombre + " Apellido: " + this.apellido}
     set EstadoCivil (estadoCivil) { this.estadoCivil = estadoCivil; }
+    set Num_Casa (x) {this.num_Casa = x}
 
 
     AñosaFuturo = function(n) 
@@ -28,7 +32,7 @@ class Persona {
 
     toString()
     {
-        return this.nombreCompleto + ", Edad : " + this.edad + ", Sexo : " + this.sexo;
+        return "ID: " + this.Id_Persona + " Nombre: " + this.nombreCompleto + ", Edad : " + this.edad + ", Sexo : " + this.sexo;
     }
     static saludar()
     {
@@ -134,3 +138,12 @@ console.log(Persona.contadorObjetosPersona);
 let empleadin2 = new Empleado("Koka", "cji", "dwadw@email.com", 21, "M", "Recursos Humanos");
 
 console.log(Persona.contadorObjetosPersona);
+
+console.log(empleadin.num_Casa);
+
+empleadin.Num_Casa = 25;
+
+console.log(empleadin.num_Casa);
+
+console.log(empleadin2.Id_Persona);
+
