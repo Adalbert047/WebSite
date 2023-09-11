@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JS</title>
+
+
+    <style>
+        .Ese
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Ejempo DOM con JavaScript</h1>
+    <p id="parrafo"> Saludos</p>
+
+    <p class="Ese">LOLA</p>
+    <h1 class="Ese">KEKEKE</h1>
+
+
+
+
+
+
+    <script>
+        console.log("Saludos desde JS")
+        /*El Metodo getElementById nos permite acceder, y la propiedad innerHTML nos da el dato exacto*/
+        let cabecero = document.getElementById("titulo");
+        console.log(cabecero);
+        let parrafo = document.getElementById("parrafo");
+        console.log(parrafo);
+
+
+        parrafo.innerHTML ='Nuevo valor de saludso';
+        cabecero.innerHTML = "NUevo titulo";
+
+        /*Podemos tener todos los elementos de un tag*/
+        let parrafo2 = document.getElementsByTagName("p");
+        console.log("Numero de parrafos " + parrafo2.length);
+        for (let i = 0; i < parrafo2.length; i++) {
+            console.log(parrafo2[i].innerHTML)
+            
+        }
+
+        /*Podemos tener todos los elementos de un class*/
+        let elemnentos = document.getElementsByClassName("Ese");
+
+        for(let elementos of elemnentos)
+        {
+            console.log(elementos.innerHTML);
+        }
+
+        let elementos2 = document.querySelectorAll("p.azul")
+        for (let x of elementos2)
+        {
+            console.log(x.innerHTML);
+        }
+
+    </script>
+</body>
+</html>
