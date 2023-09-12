@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en JS</title>
+</head>
+<body>
+    <form id = 'formulario' action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="" value="Juan">
+        <br>
+        <!--Recuerda que podemos poner el nombre del label desde antes, con esta sintaxis-->
+        Apellido: <input type="text" name="apellido" value="Perez">
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <button onclick="mostrarmasValores()">Mostrando H1</button>
+    <button onclick="mostrarEstilos()">Mostrando Estilos</button>
+
+
+    <img id = "imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="">
+
+    <div id="valores">
+    </div>
+
+    <h1 id="titulo">Hola</h1>
+    <script>
+        function mostrarValores()
+        {
+            let forms = document.forms['formulario'];
+            let texto = "";
+            //Forma de asignar los valores en variables locales
+            let nombre = forms['nombre'];
+            let apellido = forms['apellido'];
+
+
+
+            texto = nombre.value + " " + apellido.value;
+
+            /*for(let x of forms)
+            {
+                //Para acceder los valores enviamos desde el forms, usamos el value para poder acceder a estos
+                texto +=  "/" + x.value;
+            }*/
+            document.getElementById('valores').innerHTML = texto;
+
+
+            //Usando document.write
+
+        }
+
+
+        //document.write("Holis");
+
+        function mostrarmasValores()
+        {
+            //Forma de cambiar una imagen
+            document.getElementById('imagen').src = 'http://globalmentoring.com.mx/imagenes/html5.png'
+            //Podemos modificar nuestros elementos HTML mediante botones, o otras funciones, tambien podemos añadir nuevas etiquetas desde el innerHTML
+            document.getElementById('titulo').innerHTML += "<br>Nuevo Titulo";
+        }
+        
+        function mostrarEstilos()
+        {
+            //Acceder a los estilos
+            document.getElementById('titulo').style.color = 'blue';
+        }
+    </script>
+</body>
+</html>
