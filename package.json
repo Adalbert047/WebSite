@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "qunit": "^2.20.0"
+  }
+}
