@@ -5,11 +5,14 @@ btn.addEventListener("click", () => {
     let b = document.getElementById("b")
     let resultado = parseInt(a.value) + parseInt(b.value)
     
-    document.getElementById("resultado").innerHTML = "Resultado : " + resultado;
 
-
-    console.log(resultado);
-
+    if (isNaN(resultado))
+    {
+        document.getElementById("resultado").innerHTML = "El resultado no es numerico";
+    }
+    else
+    {
+        document.getElementById("resultado").innerHTML = "Resultado : " + resultado;
+    }
     
-
 })
