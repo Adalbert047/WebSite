@@ -13,3 +13,10 @@ class Persona
     set Apellido(apellido) {this.apellido = apellido}
 
 }
+
+
+
+
+
+
+

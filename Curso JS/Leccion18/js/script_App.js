@@ -1,18 +1,36 @@
-let personas = [
-    new Persona('Juan', 'Kaka'),
-    new Persona('Lara', 'Perez')
-];
+let personas = [];
 
 
-mostrarPersonas()
+
+function mostrarPersona()
 {
+    console.log("Mostrar Personas")
     let texto = "";
+    for(let persona of personas){
+        texto  += `<li>${persona.nombre} ${persona.nombre}</li>`;
+    }
+    document.getElementById('personas').innerHTML = texto;
+}
 
-    for (let x in personas)
+
+function agregarPersona()
+{
+    form = document.forms['forma']
+    console.log("Agregando Persona")
+    nombre = forma['nombre']
+    apellido = forma['apellido']
+    if(nombre.value != "" && apellido.value)
     {
-        console.log(x);
+        persona = new Persona(nombre.value, apellido.value);
+        console.log(persona);
+        personas.push(persona);
+    
+        mostrarPersona()
+    }
+    else
+    {
+        alert("Cadenas Incompletas");
     }
 
 
 }
-
