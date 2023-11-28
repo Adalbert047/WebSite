@@ -9,7 +9,7 @@ class Dato
 
     get descripcion()
     {
-        return this.descripcion
+        return this._descripcion
     }
     set descripcion(descripcion)
     {
