@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@500&family=Poppins:wght@600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #CDDACD;
+            font-family: 'Poppins';
+        }
+        .boton
+        {
+            background-color: #6B8E4E;
+            color: #FCFCFC;
+        }
+        .cuidados
+        {
+            background-color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
+    <div class="container m-2" >
+        <form action="">
+            <div class="row m-2">
+                <div class="col-md mt-3 ">
+                    <input type="text" name="nombre" id="" placeholder="Nombre" class="form-control p-3">
+                    
+                </div>
+                <div class="col-md mt-3">
+                    <input type="date" name="fecha" id="" placeholder="" class="form-control p-3">
+                </div>
+                <div class="col-md mt-3">
+                    <input type="text" name="origen" id="" placeholder="origen" class="form-control p-3">
+                </div>
+                <div class="col-md mt-3">
+                    <select name="" id="" class="form-control" placeholder = "Tipo">
+                        <option value="arbol">Arbol</option>
+                        <option value="arbol">Flor</option>
+                        <option value="arbol">Arbusto</option>
+                    </select>
+                </div>
+                <div class="col-md mt-3 cuidados">    
+                    <p>Cuidados</p>          
+                    <div class="row d-flex justify-content-between mb-2">
+                        <div class="col-1 ml-2">
+                            <input type="checkbox" class="form-check-label">
+                        </div>
+                        <div class="col-4"> 
+                            <label for="" class="form-label">Podar</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mb-2">
+                        <div class="col-1 ml-2">
+                            <input type="checkbox" class="form-check-label">
+                        </div>
+                        <div class="col-4"> 
+                            <label for="" class="form-label">Podar</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mb-2">
+                        <div class="col-1 ml-2">
+                            <input type="checkbox" class="form-check-label">
+                        </div>
+                        <div class="col-4"> 
+                            <label for="" class="form-label">Podar</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mt-3">
+                    <label for="" class="form-label"> Clima</label>
+                    <select name="" id="" class="form-control" placeholder = "">
+                        <option value="calido">Calido</option>
+                        <option value="humedo">Humedo</option>
+                        <option value="seco">Seco</option>
+                        <option value="frio">Frio</option>
+                    </select>
+                </div>
+                <div class="col-md mt-3">
+                    <input type="text" name="" id="" placeholder="Notas Especiales" class="form-control p-5">
+                </div>
+            </div>
+            <div class="row m-2 mt-5">
+                <div class="col-12">
+                    <input type="submit" class="btn col-12 p-3 boton" value="Registrarse">
+                </div>
+            </div>
+        </form>
+    </div>
     
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
