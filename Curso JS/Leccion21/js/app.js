@@ -98,13 +98,13 @@ const crearEgresoHTML = (egreso) =>
     <div class="elemento limpiarEstilos">
     <div class="elemento_descripcion">${egreso.descripcion}</div>
     <div class="derecha limpiarEstilos">
-        <div class="elemento_valor">${egreso.valor}</div>
-        <div class="elemento_porcentaje">${formatoPorcentaje(egreso.valor / totalIngresos())}</div>
-        <button class="elemento_eliminar--btn">
-            <ion-icon name='close-circle-outline' onclick = 'eliminarEgreso(${egreso.id})'></ion-icon>
-        </button>
+            <div class="elemento_valor">${egreso.valor}</div>
+            <div class="elemento_porcentaje">${formatoPorcentaje(egreso.valor / totalIngresos())}</div>
+                <button class="elemento_eliminar--btn">
+                    <ion-icon name='close-circle-outline' onclick = 'eliminarEgreso(${egreso.id})'></ion-icon>
+                </button>
+        </div>
     </div>
-</div>
 </div>`;
 
     return egresoHTML;
@@ -127,6 +127,29 @@ const eliminarEgreso = (id) =>
     cargarEgresos()
 }
 
+
+let agregarDato = () => 
+{
+    let forma = document.forms['forma'];
+    let tipo = forma['tipo'];
+    let descripcion = forma['descripcion'];
+    let valor = forma['valor'];
+    if (descripcion.value !== '' && valor.value !== '')
+    {
+        if(tipo.value === 'ingreso')
+        {
+            ingresos.push(new Ingreso(descripcion.value, +valor.value))
+            cargarCabecero()
+            cargarIngresos()
+        }
+        if(tipo.value === 'egreso')
+        {
+            egresos.push(new Egreso(descripcion.value, +valor.value))
+            cargarCabecero()
+            cargarEgresos()
+        }
+    }
+}
 let totalEgresos = () => 
 {
     let totalEgreso = 0;
