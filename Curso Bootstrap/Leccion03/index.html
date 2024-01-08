@@ -1,45 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="es">
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <title>Botón Desplegable con Bootstrap</title>
-    </head>
-    <body>
-    
-    <div class="container mt-3">
-      <!-- Acordeón de Bootstrap -->
-      <div id="accordion">
-        <div class="card">
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body text-center">
-              <p>Contenido adicional...</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Botón Ver Más con Bootstrap</title>
+</head>
+<body>
+
+<div class="container mt-3">
+  <!-- Acordeón de Bootstrap -->
+  <div id="accordion">
+    <div class="card">
+      <div class="col-sm-12 col-lg-8 mx-auto background card">
+        <div class="row-cols-1">
+            <div class="col-lg-10 col-sm-12 text-center">
+                <p>10/12/2023</p>
+            </div>
+            <div class="col-lg-10 col-sm-12 ml-3">
+                <p>Nombre: </p>
+            </div>
+            <div class="col-lg-10 col-sm-12 ml-3">
+                <p>Tipo: </p>
+            </div>
+            <div class="col-lg-10 col-sm-12 ml-3">
+                <p>Clima: </p>
+            </div>
+            <div class="col-lg-10 col-sm-12 ml-3">
+                <p>Fecha de adquisicion: </p>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body text-center">
+                <div class="col-lg-10 col-sm-12 ml-3">
+                  <p>Cuidados: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                  aaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+              aaaaaaaaaaaa </p>
+              <p>aaaaaaaaaaaaaaaaaaaaa</p>
+              <p>aaaaaaaaaaaaaaaa</p>
+
+              </div>
+              </div>
+              
+              
+              
             </div>
             
-            <!-- Botón debajo del contenido -->
-           
-          </div>
-    
-          <div class="card-header text-center" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Mostrar más
-              </button>
-            </h5>
-          </div>
         </div>
+    </div>
+      
+      <div class="card-header text-center" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Mostrar más
+          </button>
+        </h5>
       </div>
     </div>
-    
-    <!-- Scripts de Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    </body>
-    </html>
-    
+  </div>
+</div>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Función para mostrar más contenido
+ 
+</script>
+
+</body>
+</html>
