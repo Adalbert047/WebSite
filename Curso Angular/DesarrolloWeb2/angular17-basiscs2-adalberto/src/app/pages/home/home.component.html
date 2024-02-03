@@ -1,0 +1,17 @@
+<p>Home Page</p>
+@switch (componentView) {
+    @case ("movies") {
+        <app-movies/>
+    }
+    @case ("music") {
+        <app-music/>
+    }
+    @default {
+        <h3>Valor incorrecto</h3>
+    }
+}
+
+<!--Sirve para editar, literal xd, es un binding-->
+<div [contentEditable]="true">Soy tu, siempre lo fui</div>
+<h3 (mouseover)="sorpresa()" (mouseleave)="inSorpresa()">Pon el mouse encima de mi</h3>
+<p> {{message}}</p>

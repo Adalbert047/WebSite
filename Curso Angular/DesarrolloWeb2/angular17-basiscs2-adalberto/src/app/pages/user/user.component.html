@@ -1,0 +1,9 @@
+<p>Page User</p>
+
+
+
+@for (user of listUser; track $index) {
+    <li> Id: {{ $index + 1 }} Nombre: {{ user.name}} Apellido: {{ user.last_name  }} Edad: {{ user.age }}</li>
+} @empty {
+    <h1>No hay ningun usuario actualmente</h1>
+}
