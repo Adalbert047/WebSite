@@ -1,11 +1,13 @@
 function restaLista(a, b)
 {
-    var list = []
-
-    a.map( (e, index) => e - b[index]) 
-
-    list
+    
+    a.forEach((e, index) => {
+        if (e == b[index])
+        {
+            
+        }
+    });  
 }
 
 
-console.log(restaLista([1,2,2,3,4,5], [2]))
+console.log(restaLista([1,2,2,3,4,5], [1,2]))
