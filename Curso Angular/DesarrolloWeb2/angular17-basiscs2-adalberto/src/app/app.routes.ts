@@ -12,5 +12,11 @@ export const routes: Routes = [
         path: 'user',
         title: 'App page User',
         component: UserComponent
-    }
+    },
+    {
+        path: 'user/:id',
+        title: 'App page User',
+        component: UserComponent
+    },
+
 ];

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-movies',
@@ -8,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './movies.component.css'
 })
 export class MoviesComponent {
+  count = 0
+  //Output nos permite pasar valores de hijo a padre, en este se enviara el valor, es necesario el EventEmitter
+  @Output() countEventEmmiter = new EventEmitter()
+
+  sum()
+  {
+    this.count++
+    this.countEventEmmiter.emit(this.count)
+  }
 
 }

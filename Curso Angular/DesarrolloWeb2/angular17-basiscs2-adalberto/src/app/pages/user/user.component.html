@@ -7,3 +7,7 @@
 } @empty {
     <h1>No hay ningun usuario actualmente</h1>
 }
+<app-movies (countEventEmmiter)="countSum($event)"/>
+
+<p>El valor del contador es: {{count}}</p>
+<p>El elemento tiene un id de: {{id}}</p>
