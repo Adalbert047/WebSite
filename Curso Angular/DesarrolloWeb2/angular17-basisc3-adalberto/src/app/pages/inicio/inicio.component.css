@@ -1,0 +1,10 @@
+.container-img
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+}
+.list-redesSociales
+{
+    list-style: none;
+}
