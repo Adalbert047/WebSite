@@ -1,0 +1,6 @@
+.container-btns
+{
+    margin-top: 40px;
+    display: flex;
+    column-gap: 30px;
+}

@@ -1,10 +1,40 @@
+*
+{
+    color: #edf2f4;
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+.background-inicio
+{
+    
+    /* height: 100vh; */
+    padding: 1.75%;
+    background: #2b2d42;
+    
+}
 .container-img
 {
+    
     display: flex;
     flex-direction: row;
-    column-gap: 10%;
+    column-gap: 5%;
 }
 .list-redesSociales
 {
+    margin-top: 4%;
     list-style: none;
+}
+.img
+{
+    width: 40%;
+    overflow: hidden;
+    
+}
+h1, h4, h2 
+{
+    margin: 0;
+    
 }

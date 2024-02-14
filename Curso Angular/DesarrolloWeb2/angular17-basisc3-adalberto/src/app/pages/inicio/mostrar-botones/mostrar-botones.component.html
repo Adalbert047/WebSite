@@ -1,0 +1,19 @@
+
+<div class="container-btns">
+    @if (isTrue) {
+        @for (item of alert; track $index) {
+            <ngb-alert [type]="item.type" (closed)="close(item)">{{ item.message }}</ngb-alert>
+        }
+        
+    }
+    @else { 
+        <div class="container-hidden">
+            <app-button [value]="valueCV" (click)="verificar()"></app-button>
+            <app-button [value]="valueVerMas" (click)="mandarPaginaRandom()"></app-button>
+        </div>
+    }
+    <p>{{isTrue}}</p>
+    
+    
+</div>
+

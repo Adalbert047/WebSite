@@ -1,0 +1,11 @@
+footer 
+{
+    background-color: #242538;
+    color: #edf2f4;
+}
+
+.list-navegation li a
+{
+    text-decoration: none;
+    color: #edf2f4;
+}

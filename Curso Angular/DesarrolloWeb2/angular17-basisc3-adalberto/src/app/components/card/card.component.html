@@ -1,1 +1,19 @@
-<p>card works!</p>
+<div ngbAccordion [closeOthers]="true" data-bs-theme="dark">
+	@for (item of items; track item) {
+		<div ngbAccordionItem [collapsed]="item.nombre !== 'Universidad'">
+			<h2 ngbAccordionHeader>
+				<button ngbAccordionButton>{{ item.nombre }}</button>
+			</h2>
+			<div ngbAccordionCollapse>
+				<div ngbAccordionBody>
+					<ng-template>
+						@if (item.contenido) 
+						{
+							{{item.contenido}}
+						}
+					</ng-template>
+				</div>
+			</div>
+		</div>
+	}
+</div>

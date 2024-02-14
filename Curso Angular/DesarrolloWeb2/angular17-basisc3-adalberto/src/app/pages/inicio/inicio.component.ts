@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { MostrarBotonesComponent } from './mostrar-botones/mostrar-botones.component';
+
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [MostrarBotonesComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
-
+  
 }

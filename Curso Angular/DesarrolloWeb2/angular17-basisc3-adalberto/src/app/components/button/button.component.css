@@ -1,0 +1,17 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.btn-primary 
+{
+    color: white;
+    background-color: transparent;
+    border: white;
+}
+.btn-primary:hover
+{
+    color: black;
+    background-color: white;
+    border: black;
+}

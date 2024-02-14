@@ -5,22 +5,22 @@ import { Cliente } from './clientes';
 @Component({
   selector: 'app-clientes',
   standalone: true,
-  imports: [ClienteService],
+  imports: [],
   templateUrl: './clientes.component.html',
   styleUrl: './clientes.component.css'
 })
 export class ClientesComponent {
 
-  clientes : Cliente[];
+  clientes : Cliente[] = []
 
 
   constructor(private clienteService : ClienteService)
   {
-
+    this.clientes = this.clienteService.getClientes()
   }
 
-  this.clientes = this.clienteService.getClientes()
   
+
 
 
 }
