@@ -11,12 +11,16 @@ import { Cliente } from './clientes';
 })
 export class ClientesComponent {
 
-  clientes : Cliente[] = []
+  clientes : Cliente[] = [
+    
+  ]
 
 
   constructor(private clienteService : ClienteService)
   {
-    this.clientes = this.clienteService.getClientes()
+    this.clienteService.getClientes().subscribe(
+      clientes => this.clientes = clientes
+    )
   }
 
   
