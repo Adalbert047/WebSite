@@ -1,0 +1,17 @@
+<div class="container-card">
+    <p>El id es {{ gameCard?.id }}</p>
+    <p-card header={{gameCard?.title}} subheader={{gameCard?.id}} [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="{{gameCard?.image}}" [style]="{ height: '100%', width: '100%'}" />
+        </ng-template>
+        <p>
+            {{gameCard?.description}}
+        </p>
+  
+        <ng-template pTemplate="footer">
+            <p-button label="Save" icon="pi pi-check"></p-button>
+            <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+        </ng-template>
+    </p-card>
+</div>
+
