@@ -26,4 +26,6 @@ export class HomeComponent {
     this.gameList = this.gamingService.getAllGameList()
   }
   
+
+ 
 }

@@ -1,17 +1,34 @@
 <div class="container-card">
-    <p>El id es {{ gameCard?.id }}</p>
+    <h1>Detalles</h1>
     <p-card header={{gameCard?.title}} subheader={{gameCard?.id}} [style]="{ width: '360px' }">
         <ng-template pTemplate="header">
-            <img alt="Card" src="{{gameCard?.image}}" [style]="{ height: '100%', width: '100%'}" />
+            <img alt="Card" src="{{gameCard?.image}}" [style]="{ height: '250px'}" />
         </ng-template>
         <p>
             {{gameCard?.description}}
         </p>
-  
-        <ng-template pTemplate="footer">
-            <p-button label="Save" icon="pi pi-check"></p-button>
-            <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
-        </ng-template>
+        
     </p-card>
+    <p-card header="Formulario Chido de Gente Chida" subheader={{gameCard?.id}} [style]="{ width: '360px' }">
+        <form action="" [formGroup]="applyForm" (submit)="submitApplication()">
+            <div class="form-content">
+                <label for="firstName">Nombre</label>
+                <input formControlName="firstName" pInputText id="firstName" aria-describedby="username-help"/>
+                <small id="username-help">Ingresa el nombre wey</small>
+            </div>
+            <div class="form-content">
+                <label for="lastName">Apellido</label>
+                <input formControlName="lastName" pInputText id="lastName" aria-describedby="username-help"/>
+                <small id="username-help">Ingresa el apellido wey</small>
+            </div>
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input formControlName="email" pInputText id="email" aria-describedby="username-help"/>
+                <small id="username-help">Ingresa el email wey</small>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </p-card>
+    
 </div>
 

@@ -11,14 +11,14 @@ import { Igame } from '../../interfaces/igame';
   template: `
     <p-card header="{{gameCard.title}}" subheader="{{gameCard.id}}" [style]="{ width: '360px' }">
     <ng-template pTemplate="header">
-        <img alt="Card" src="{{gameCard.image}}" [style]="{ height: '100%'}" />
+        <img alt="Card" src="{{gameCard.image}}" [style]="{ height:'250px'}" />
     </ng-template>
     <p>
         {{gameCard.description}}
     </p>
    
     <ng-template pTemplate="footer">
-        <p-button [routerLink]="['details/', gameCard]" label="Save" icon="pi pi-check"></p-button>
+        <p-button [routerLink]="['details/', gameCard.id]" label="Save" icon="pi pi-check"></p-button>
     </ng-template>
 </p-card>
 

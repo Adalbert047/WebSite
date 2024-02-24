@@ -41,4 +41,15 @@ export class GamingService {
   {
     return this.gamesList.find(value => value.id === id)
   }
+
+  submitApplication(firstName : string, lastName : string, email: string)
+  {
+    if(!firstName || !lastName || !email)
+    {
+      alert("No llenastes tu papelo anoche")
+      return
+    }
+    
+    alert(`Mi nombre es : ${firstName}, apellido: ${lastName}, correo ${email}`)
+  }
 }
