@@ -26,9 +26,14 @@ export const routes: Routes = [
                 component : HombreProductosComponent
             },
             {
-                path: 'mujer',
-                component : MujerProductosComponent
+                path: '',
+                component : MujerProductosComponent,
             },
+            {
+                        
+                path: 'details/:id',
+                component : DetailsComponent
+            }
             
         ]
     },
@@ -39,9 +44,5 @@ export const routes: Routes = [
     {
         path: 'nosotros',
         component : NosotrosComponent
-    },
-    {
-        path: 'details/:id',
-        component : DetailsComponent
-    },
+    }
 ];

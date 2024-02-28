@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductService } from '../../services/product.service';
+import { Product } from '../../interface/product';
 @Component({
   selector: 'app-details',
   standalone: true,
@@ -9,4 +11,19 @@ import { Component } from '@angular/core';
 })
 export class DetailsComponent {
 
+
+  route : ActivatedRoute = inject(ActivatedRoute)
+  productService : ProductService = inject(ProductService)
+  productCard : Product | undefined
+
+  constructor()
+  {
+    const productId = Number(this.route.snapshot.params["id"])
+    this.productCard = this.productService.getByIdProductWoman(productId)
+  }
+  
+
+
+  
+  
 }
