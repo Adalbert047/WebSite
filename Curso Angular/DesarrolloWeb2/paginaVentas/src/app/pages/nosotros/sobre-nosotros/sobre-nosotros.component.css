@@ -3,3 +3,12 @@
     margin: 0;
     padding: 0;
 }
+.container-about-us
+{
+    margin-top: 10%;
+    height: 500px;
+}
+.title
+{
+    font-size: 3rem;
+}

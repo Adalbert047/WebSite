@@ -5,8 +5,8 @@
 }
 .container-inicio
 {
-    background-color: black;
-    height: 100vh;
+    background-color: #EBECE2;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +14,24 @@
 }
 .container-title-primary p
 {
-    color: aliceblue;
-    font-size: 12rem;
+    color: black;
+    font-size: 10rem;
+}
+.container-logo img
+{
+    width: 100%;
+    height: 100%;
+}
+.btn-empezar
+{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+.btn-empezar:hover
+{
+    color: black;
+    background-color: transparent;
 }

@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-values
+{
+    height: 550px;
+}
+.container-description
+{
+    border: 1px solid black;
+    height: 330px;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}

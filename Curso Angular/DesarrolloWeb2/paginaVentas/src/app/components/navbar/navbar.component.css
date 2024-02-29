@@ -1,0 +1,26 @@
+.navbar
+{
+    background-color: black !important;
+    
+}
+a, span{
+    color: #FFFFFF !important
+}
+.btn-log-in
+{
+    color: #FFFFFF;
+}
+.btn-register
+{
+    color: black;
+    background-color: #FFFFFF;
+}
+.btn-register:hover
+{
+    color: black;
+    background-color: #d3cece;
+}
+.btn-log-in:hover
+{
+    color: #d3cece;
+}
