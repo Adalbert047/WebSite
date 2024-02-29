@@ -26,17 +26,16 @@ export const routes: Routes = [
                 component : HombreProductosComponent
             },
             {
-                path: '',
+                path: 'mujer',
                 component : MujerProductosComponent,
             },
-            {
-                        
+            {     
                 path: 'details/:id',
                 component : DetailsComponent
-            }
-            
+            },        
         ]
     },
+    
     {
         path: 'contacto',
         component : ContactoComponent

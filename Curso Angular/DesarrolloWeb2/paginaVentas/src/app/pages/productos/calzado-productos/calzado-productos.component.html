@@ -1,3 +1,5 @@
 <div class="container-shoe-products">
-    <!-- @for (item of items; track $index) {} -->
+    @for (product of productsShoe; track $index) {
+        <app-card-producto [products]="product"></app-card-producto>
+    }
 </div>

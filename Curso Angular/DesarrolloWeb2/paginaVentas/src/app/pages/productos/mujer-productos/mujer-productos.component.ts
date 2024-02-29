@@ -1,12 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { ProductService } from '../../../services/product.service';
 import { Product } from '../../../interface/product';
 import { CardProductoComponent } from '../../../components/card-producto/card-producto.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-mujer-productos',
   standalone: true,
-  imports: [CardProductoComponent],
+  imports: [CardProductoComponent, RouterOutlet],
   templateUrl: './mujer-productos.component.html',
   styleUrl: './mujer-productos.component.css'
 })
@@ -19,4 +20,7 @@ export class MujerProductosComponent {
   {
     this.productsWomans = this.productService.getAllProductsWoman()
   }
+
+
+
 }

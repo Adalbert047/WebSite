@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CardProductoComponent } from '../../../components/card-producto/card-producto.component';
+import { Product } from '../../../interface/product';
+import { ProductService } from '../../../services/product.service';
 
 @Component({
   selector: 'app-calzado-productos',
@@ -9,7 +11,11 @@ import { CardProductoComponent } from '../../../components/card-producto/card-pr
   styleUrl: './calzado-productos.component.css'
 })
 export class CalzadoProductosComponent {
-  items = [
-    
-  ]
+  productsShoe : Product[] = []
+  productService : ProductService = inject(ProductService)
+
+  constructor()
+  {
+    this.productsShoe = this.productService.getAllProductsShoe()
+  }
 }

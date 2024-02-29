@@ -19,7 +19,7 @@ export class DetailsComponent {
   constructor()
   {
     const productId = Number(this.route.snapshot.params["id"])
-    this.productCard = this.productService.getByIdProductWoman(productId)
+    this.productCard = this.productService.getProductById(productId)
   }
   
 
