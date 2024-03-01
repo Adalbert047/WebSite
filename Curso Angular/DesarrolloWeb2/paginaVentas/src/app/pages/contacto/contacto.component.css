@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+.img-maps img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+i{
+    font-size: 1.5em;
+}

@@ -1,13 +1,12 @@
-<div class="card">
-    <img [src]="products.img" alt="">
+<div class="card m-2" style="width: 18rem;">
+    <img [src]="products.img" alt="" style="height: 15rem;">
     <div class="card-body">
-        <h4 class="card-title"> {{ products.name }}</h4>
-        <h6 class="card-title"> {{ products.id }}</h6>
+        <h4 class="card-title">{{products.name }}</h4>
+        <h6 class="card-title">{{ products.id }}</h6>
         <p class="card-text"> {{ products.description}}</p>
-        <p class="card-text"> {{ products.price}}</p>
+        <p class="card-text">Precio: {{ products.price}}$</p>
     </div>
-
     <div class="card-footer">
-        <button class="btn"><a [routerLink]="['../details/', products.id]">Seleccionar</a></button>
+        <button class="btn btn-dark "><a [routerLink]="['../details/', products.id]">Seleccionar</a></button>
     </div>
 </div>
