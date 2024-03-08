@@ -1,0 +1,5 @@
+.container-man-products{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}

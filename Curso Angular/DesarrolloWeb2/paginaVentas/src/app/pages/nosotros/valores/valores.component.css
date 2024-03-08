@@ -8,9 +8,19 @@
 }
 .container-description
 {
-    border: 1px solid black;
-    height: 330px;
+    box-shadow: 1px 1px 1px 1px;
     padding: 10px;
     margin: 10px;
     text-align: justify;
+    border-radius: 10px;
+}
+.form 
+{
+    display: flex;
+    flex-direction: row;
+}
+.title
+{
+    color: black;
+    font-size: 1.2rem;
 }
