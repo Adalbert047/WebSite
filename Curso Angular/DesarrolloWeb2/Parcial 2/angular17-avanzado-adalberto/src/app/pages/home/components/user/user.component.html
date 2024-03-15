@@ -1,0 +1,21 @@
+
+    <div class="overflow-x-auto">
+        <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+          <thead class="ltr:text-left">
+            <tr>
+              <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">No.</th>
+              <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nombre</th>
+              <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Cuerpo</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            @for (user of listUser; track $index) {
+                <tr>
+                    <th class="whitespace-nowrap px-2 py-2 text-gray-900"> {{user.id}}</th>
+                    <th class="whitespace-nowrap px-2 py-2 text-gray-700"> {{user.title}}</th>
+                    <th class="whitespace-nowrap px-2 py-2 text-gray-700"> {{user.body}}</th>
+                </tr>
+            }
+          </tbody>
+        </table>
+      </div>
