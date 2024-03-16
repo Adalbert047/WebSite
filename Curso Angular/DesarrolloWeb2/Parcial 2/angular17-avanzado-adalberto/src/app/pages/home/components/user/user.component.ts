@@ -27,7 +27,7 @@ export class UserComponent {
         console.log(data);
         this.listUser = data
       },
-      error: (err) => console.log("Error", err)
+      error: (err) => console.log("Errores", err)
     }
     )
   }
