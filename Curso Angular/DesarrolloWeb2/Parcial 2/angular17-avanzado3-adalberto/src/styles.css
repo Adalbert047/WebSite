@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+10&family=Saira+Stencil+One&family=Vast+Shadow&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-jersey
+{
+font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180px;
+}
+
+.text-dancing
+{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 180px;
+}
+
+.text-saira
+{
+    font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180px;
+}
+
+.text-vast{
+    font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180px;
+}
+
+.btn-download
+{
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    background-color: #062937;
+    text-decoration: none;
+    color: #edf2f8;
+    transition: all ease-in-out .3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+   
+    
+}
+.btn-download:hover
+{
+    background-color: transparent;
+    color: #000;
+    
+}

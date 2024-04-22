@@ -1,0 +1,55 @@
+<h1>Directivas</h1>
+
+<h3>Directivas atributos</h3>
+<hr>
+
+<p [className]="color ? 'text1' : 'text2'"
+>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, amet? Molestiae delectus minima id saepe earum dolorum eaque, temporibus cum ad odit voluptatum sequi quam. Libero dolores fuga commodi atque.
+</p>
+
+
+<p [className]="!color ? 'text1': 'text2'">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, neque? Vitae laborum voluptate in. Possimus ipsum animi similique aspernatur alias laborum sapiente saepe ut dolor? Aspernatur debitis consequuntur fugit voluptatum!
+</p>
+
+
+<p [style.border]="color ? 'solid 2px blue' : 'solid 2px red'">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis voluptates corporis officia adipisci minus officiis, eveniet a, veniam culpa dolor dolorem voluptatem. Voluptatem magnam dolorem fugit odit odio iste!
+</p>
+
+<button (click)="onchangeColor()"></button>
+
+
+<h3>Directivas Estructurales</h3>
+<hr>
+<ol>
+  @for (country of countries; track $index) {
+    @if (country === "Mexico") {
+      <li>
+        {{country}}
+      </li>
+    }
+  }
+</ol>
+
+<ol>
+  @switch (num) {
+    @case (10) {
+      <li>Soy el numero 10</li>
+    }
+    @case (11) {
+      <li>Soy el numero 11</li>
+    }
+    @default {
+      <li>No soy nadie</li>
+    }
+  }
+</ol>
+
+
+<h3>Pipes basicos</h3>
+<hr>
+<p>{{fecha | date : 'dd/mm/yy'}}</p>
+<p>{{name | uppercase}}</p>
+<p>{{name | lowercase}}</p>
+<p>{{ op  | operaciones : num}}</p>

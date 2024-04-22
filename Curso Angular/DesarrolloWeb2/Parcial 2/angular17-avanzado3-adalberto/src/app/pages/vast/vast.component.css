@@ -1,0 +1,9 @@
+#container-vast {
+    /* background-color: rgb(137, 148, 148); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    height: 100vh;
+}

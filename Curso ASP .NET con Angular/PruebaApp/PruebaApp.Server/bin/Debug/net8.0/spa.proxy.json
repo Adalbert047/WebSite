@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:4200",
 "RedirectUrl": "",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\..\\pruebaapp.client",
+"WorkingDirectory": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\..\\pruebaapp.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

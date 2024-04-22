@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "38W4DM5mEK6EelxPqPL1y5RA+tpPV2/mIsSKRvuCDaw87wvQJKRkyhd92cGPYF8U+q1BMbAT5nAZ/xuY57yH4w==",
+  "dgSpecHash": "omw6d1rSlcEz1+TH7rmGZU0MXFu05gzfB1UzZ5f2ixL8wAQEUH9wn4KmumAWEub5JP37ZzS0S6UdamnYtYYlXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
+  "projectFilePath": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\crack\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.2\\microsoft.aspnetcore.spaproxy.8.0.2.nupkg.sha512",
+    "C:\\Users\\crack\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.3\\microsoft.aspnetcore.spaproxy.8.0.3.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\crack\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

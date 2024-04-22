@@ -1,1 +1,2 @@
 C:\Users\crack\OneDrive\Escritorio\Trabajos de Adal\WebSite\Curso ASP .NET con Angular\PruebaApp\pruebaapp.client\obj\Debug\pruebaapp.client.esproj.CoreCompileInputs.cache
+C:\Users\crack\Desktop\Trabajos Adal\WebSite\Curso ASP .NET con Angular\PruebaApp\pruebaapp.client\obj\Debug\pruebaapp.client.esproj.CoreCompileInputs.cache

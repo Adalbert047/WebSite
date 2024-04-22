@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj": {}
+    "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj": {
+    "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
+        "projectUniqueName": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
         "projectName": "PruebaApp.Server",
-        "projectPath": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
+        "projectPath": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\PruebaApp.Server.csproj",
         "packagesPath": "C:\\Users\\crack\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\obj\\",
+        "outputPath": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\PruebaApp.Server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\crack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,0 +1,8 @@
+.container-primary
+{
+    background-image: url('../assets/foto-carretera-rodeada-campos-hierba-seca-cielo-puesta-sol.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

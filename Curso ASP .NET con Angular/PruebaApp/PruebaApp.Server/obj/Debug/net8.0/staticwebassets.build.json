@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "ebWDW+R1+iiBWV//R7TSDkkPgwQ+r9uGHb3Cik/Yfnk=",
+  "Hash": "RGQBEI71uloXzBW5cWS3/BUl1ovAiFRlX4J3MXvofkM=",
   "Source": "PruebaApp.Server",
   "BasePath": "_content/PruebaApp.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\crack\\OneDrive\\Escritorio\\Trabajos de Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\pruebaapp.client\\pruebaapp.client.esproj",
+      "Identity": "C:\\Users\\crack\\Desktop\\Trabajos Adal\\WebSite\\Curso ASP .NET con Angular\\PruebaApp\\pruebaapp.client\\pruebaapp.client.esproj",
       "Version": 2,
       "Source": "pruebaapp.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
