@@ -1,0 +1,37 @@
+<div class="container bg-black.bg-gradient">
+  <div class="card mt-5 mx-auto border rounded" style="width: 60%;">
+    <div class="col-12">
+      <div class="d-flex flex-column row-gap-2">
+        <div class="col-12">
+          <div class="card-header p-3">
+            <h4 class="card-title">Mi aplicacion de cosas raras por hacer</h4>
+          </div>
+        </div>
+        <div class="col-12 p-4">
+          <div class="input-group">
+            <input class="form-control" type="text" [(ngModel)]="nuevaTarea" placeholder="Agrega una nueva tarea">
+            <button class="btn  btn-outline-primary" (click)="onAdd()">Agregar</button>
+          </div>
+        </div>
+        <div class="col-12 p-4">
+          <div class="">
+            @for (tarea of tareas; track $index) 
+            {
+              <ul class="list-group">
+                <li class="list-group-item my-1 col-12">
+                  <div class="input-group m-auto">
+                    <div class="input-group-text">
+                      <input class="form-check-input disabled" type="checkbox" value="" aria-label="Checkbox for following text input">
+                    </div>
+                    <span class="input-group-text"> {{tarea}}</span>
+                    <button class="btn btn btn-outline-danger " (click)="onDelete(tarea)">Eliminar</button>
+                  </div>
+                </li>
+              </ul>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

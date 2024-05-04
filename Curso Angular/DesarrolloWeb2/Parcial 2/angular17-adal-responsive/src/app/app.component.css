@@ -1,0 +1,85 @@
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    height: 50px;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+.movil
+{
+    display: none;
+}
+nav 
+{
+    display: flex;
+    gap: 20px;
+}
+nav a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#seccion1
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background-color: brown;
+    color: white;
+
+}
+#seccion2
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    color: white;
+
+    background-color: rgb(54, 54, 171);
+}
+main
+{
+    display: flex;
+}
+
+@media (max-width: 756px)
+{
+    main 
+    {
+        display: block;
+    }
+    header
+    {
+        background-color: rgb(62, 113, 96);
+    }
+
+    .escritorio
+    {
+        display: none;
+    }
+    .movil
+    {
+        display: contents;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 970px)
+{
+    #seccion1 
+    {
+        background-color: chocolate;
+    }
+    #seccion2
+    {
+        background-color: chartreuse;
+        
+    }
+}
